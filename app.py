@@ -49,7 +49,7 @@ if submit and question:
       question = question.replace("\n", " ")
     
       question = client.chat.completions.create(
-        model="gpt-4o-turbo",
+        model="gpt-4o",
         messages=[
               {"role": "user", "content": "If a question comes in Korean, Translate the following Korean text to Enaglish:"
                + question},
