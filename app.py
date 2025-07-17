@@ -26,7 +26,7 @@ st.title("한글로 답변하는 AI")
 st.subheader("부제 : Semantic search and Retrieval augmented generation using Elasticsearch and OpenAI")
 
 st.caption('''
-영문 Wiki에서 답변 가능한 질문에 대해서 답변을 잘합니다. 좋좋은 질문 예 : 
+영문 Wiki에서 답변 가능한 질문에 대해서 답변을 잘합니다. 좋은 질문 예 : 
 - 대서양은 몇 번째로 큰 바다인가?
 - 대한민국의 수도는?
 - 이순신의 출생년도는?
@@ -75,7 +75,7 @@ if submit and question:
         model="gpt-3.5-turbo",
         #model="gpt-4-1106-preview",
         messages=[
-              {"role": "system", "content": "You are a helpful assistant. If it is difficult to give an exact answer to the question with the following text, please answer in Korean: '제가 기지고 있는 정보로는 답변이 어렵습니다.'"},
+              #{"role": "system", "content": "You are a helpful assistant. If it is difficult to give an exact answer to the question with the following text, please answer in Korean: '제가 기지고 있는 정보로는 답변이 어렵습니다.'"},
               #{"role": "system", "content": "You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know."},
 
               #{"role": "system", "content": "You are a helpful assistant."},
